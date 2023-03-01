@@ -20,7 +20,7 @@ body {
     animation: linear;
     animation-name: rotacio;
     animation-duration: 5s;
-    animation-iteration-count: 3;
+    animation-iteration-count: 1;
     
 }
 
