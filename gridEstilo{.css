@@ -1,0 +1,84 @@
+body {
+    background: black;
+}
+.grid {
+    outline: 4px solid white;
+    width: 500px;
+    height: 500px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "n1 n1 n1 n1"
+    "0 n5 n5 n2"
+    "0 n5 n5 n2"
+    "n4 n4 n4 n4"
+    "n4 n4 n4 n4";
+    gap: 5px;
+    
+    animation: linear;
+    animation-name: rotacio;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes rotacion {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg)};
+
+}
+
+.item {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.item1 {
+    display: grid;
+    /* background: rgb(231, 98, 61); */
+    grid-area: n1;
+    color: white;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.item2 {
+    background: rgb(31, 124, 97);
+    grid-area: n2;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 100%;
+    ;
+}
+
+.item3 {
+    background: rgb(255, 208, 0);
+    grid-area: n3;
+}
+
+.item4 {
+    background: rgb(144, 80, 222);
+    grid-area: n4;
+}
+
+.item5 {
+    
+    display: grid;
+    align-items: center;
+    background-color: aqua;
+    grid-area: n5;
+    background-image: url(gato.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+img {
+    width: 100%;
+}
+
