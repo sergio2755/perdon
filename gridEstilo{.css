@@ -18,13 +18,13 @@ body {
     gap: 5px;
     
     animation: linear;
-    animation-name: rotacion;
+    animation-name: rotacio;
     animation-duration: 5s;
     animation-iteration-count: 3;
     
 }
 
-@keyframes rotacion {
+@keyframes rotacio {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg)};
 
