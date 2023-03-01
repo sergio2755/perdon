@@ -18,9 +18,9 @@ body {
     gap: 5px;
     
     animation: linear;
-    animation-name: rotacio;
+    animation-name: rotacion;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 3;
     
 }
 
